@@ -1,4 +1,4 @@
-import '../styles/Footer.sass'
+import './HeaderFooter.sass';
 import kasaLogoBlack from "../assets/kasa_logo_black.png";
 
 function Footer() {

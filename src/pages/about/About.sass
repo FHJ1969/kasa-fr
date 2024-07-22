@@ -1,0 +1,59 @@
+.header__about
+  border-bottom: 1px solid black
+
+.about
+  width: 100%
+  .about__imageContainer
+    display: flex
+    justify-content: center
+    margin-bottom: 50px
+    .about__imageContainer--image
+      display: block
+      width: 100%
+      height: 250px
+      margin: 0 100px
+      border-radius: 20px
+      object-fit: cover
+      @media (max-width: 770px)
+        margin: 0 20px
+
+  .aboutContainer
+    display: flex
+    flex-direction: column
+    margin-bottom: 38px
+    .aboutContainer__box
+      width: 100%
+      display: flex
+      flex-direction: column
+      .aboutContainer__box--red
+        display: flex
+        padding: 15px
+        border-radius: 5px
+        flex-direction: row
+        justify-content: space-between
+        background-color: #FF6060
+        margin: 15px 170px
+        @media (max-width: 770px)
+          margin: 15px 20px
+        .aboutContainer__box--title
+          display: inline-block
+          font-family: Montserrat, sans-serif
+          color: white
+          font-size: 24px
+        .aboutContainer__box--button
+          border: none
+          cursor: pointer
+          background-color: #FF6060
+          .aboutContainer__box--icon
+            transition: transform 200ms ease-in-out
+            display: inline-block
+      .aboutContainer__box--desc
+        display: block
+        font-size: 24px
+        font-family: Montserrat, sans-serif
+        margin: 15px 190px
+        @media (max-width: 770px)
+          margin: 15px 27px
+
+
+

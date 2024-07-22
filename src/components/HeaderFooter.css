@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  margin: 45px 100px; }
+  @media (max-width: 770px) {
+    .header {
+      margin: 45px 30px; } }
+  .header .header__logo {
+    width: 210px; }
+    @media (max-width: 770px) {
+      .header .header__logo {
+        width: 145px; } }
+  .header .header__navbar {
+    padding: 30px 0; }
+    .header .header__navbar .header__navbar--link {
+      display: inline-block;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      transition: opacity 200ms ease-in-out;
+      margin-left: 40px;
+      cursor: pointer; }
+      @media (max-width: 770px) {
+        .header .header__navbar .header__navbar--link {
+          font-size: 12px;
+          margin-left: 20px;
+          text-transform: uppercase; } }
+      .header .header__navbar .header__navbar--link:hover {
+        opacity: 0.7; }
+
+.footer {
+  background-color: black;
+  padding: 60px 60px 30px 60px; }
+  .footer .footer__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footer .footer__section .footer__section--image {
+      display: inline-block; }
+    .footer .footer__section .footer__section--copyright {
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      padding: 35px 0 20px;
+      display: inline-block; }
+
+/*# sourceMappingURL=HeaderFooter.css.map */
