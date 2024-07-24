@@ -1,6 +1,3 @@
-.header__about
-  border-bottom: 1px solid black
-
 .about
   width: 100%
   .about__imageContainer
@@ -47,13 +44,21 @@
           .aboutContainer__box--icon
             transition: transform 200ms ease-in-out
             display: inline-block
+            &.open
+              transform: rotate(-180deg)
       .aboutContainer__box--desc
-        display: block
+        max-height: 0
+        overflow: hidden
+        transition: max-height 300ms ease-in-out, visibility 300ms ease-in-out, margin 300ms ease-in-out
         font-size: 24px
         font-family: Montserrat, sans-serif
-        margin: 15px 190px
+        margin: 0 190px
+        visibility: hidden
         @media (max-width: 770px)
-          margin: 15px 27px
-
-
-
+          margin: 0 27px
+        &.open
+          max-height: 200px
+          margin: 15px 190px
+          visibility: visible
+          @media (max-width: 770px)
+            margin: 15px 27px
