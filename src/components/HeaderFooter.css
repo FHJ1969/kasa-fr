@@ -5,12 +5,12 @@
   background-color: white;
   justify-content: space-between;
   margin: 45px 100px; }
-  @media (max-width: 770px) {
+  @media (max-width: 768px) {
     .header {
       margin: 45px 30px; } }
   .header .header__logo {
     width: 210px; }
-    @media (max-width: 770px) {
+    @media (max-width: 768px) {
       .header .header__logo {
         width: 145px; } }
   .header .header__navbar {
@@ -25,7 +25,7 @@
       transition: opacity 200ms ease-in-out;
       margin-left: 40px;
       cursor: pointer; }
-      @media (max-width: 770px) {
+      @media (max-width: 768px) {
         .header .header__navbar .header__navbar--link {
           font-size: 12px;
           margin-left: 20px;

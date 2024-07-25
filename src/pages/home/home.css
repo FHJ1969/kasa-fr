@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   border-radius: 20px;
   margin: 50px 100px; }
-  @media (max-width: 770px) {
+  @media (max-width: 768px) {
     .imageContainer {
       margin: 50px 30px;
       height: 111px; } }
@@ -35,7 +35,7 @@
     font-size: 48px;
     text-align: center;
     color: white; }
-    @media (max-width: 770px) {
+    @media (max-width: 768px) {
       .imageContainer .imageContainer__title {
         padding: 10px;
         text-align: left;
@@ -46,7 +46,7 @@
   flex-wrap: wrap;
   margin: 50px 9%;
   justify-content: center; }
-  @media (max-width: 770px) {
+  @media (max-width: 768px) {
     .homeContainer {
       margin: 50px 30px; } }
   .homeContainer .homeContainer__box {
@@ -60,7 +60,7 @@
     width: 30%;
     position: relative;
     border-radius: 10px; }
-    @media (max-width: 770px) {
+    @media (max-width: 768px) {
       .homeContainer .homeContainer__box {
         margin: 20px 0;
         width: 100%; } }

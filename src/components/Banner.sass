@@ -4,7 +4,7 @@
   flex-direction: column
   justify-content: center
   margin: 0 100px
-  @media (max-width: 770px)
+  @media (max-width: 768px)
     margin: 0 20px
 
   .about__imageContainer--image
@@ -13,6 +13,8 @@
     height: 233px
     border-radius: 20px
     object-fit: cover
+    @media (max-width: 768px)
+      height: 111px
 
   .about__imageContainer--overlay
     position: absolute
@@ -33,3 +35,8 @@
     text-shadow: black 2px 2px
     color: white
     z-index: 2
+    @media (max-width: 768px)
+      font-size: 24px
+      bottom: 45px
+      margin-left: 15px
+      text-align: center

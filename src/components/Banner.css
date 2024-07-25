@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 100px; }
-  @media (max-width: 770px) {
+  @media (max-width: 768px) {
     .about__imageContainer {
       margin: 0 20px; } }
   .about__imageContainer .about__imageContainer--image {
@@ -13,6 +13,9 @@
     height: 233px;
     border-radius: 20px;
     object-fit: cover; }
+    @media (max-width: 768px) {
+      .about__imageContainer .about__imageContainer--image {
+        height: 111px; } }
   .about__imageContainer .about__imageContainer--overlay {
     position: absolute;
     top: 0;
@@ -31,5 +34,11 @@
     text-shadow: black 2px 2px;
     color: white;
     z-index: 2; }
+    @media (max-width: 768px) {
+      .about__imageContainer .about__imageContainer--title {
+        font-size: 24px;
+        bottom: 45px;
+        margin-left: 15px;
+        text-align: center; } }
 
 /*# sourceMappingURL=Banner.css.map */
