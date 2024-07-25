@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './About.sass';
-import aboutBackground from '../../assets/about_background.jpg';
 import Chevron from '../../assets/chevron.png';
 import aboutJSON from '../../data/about.json';
 import Header from '../../components/Header.jsx';
 import Footer from '../../components/Footer.jsx';
+import Banner from '../../components/Banner.jsx'
 
 function About() {
     const [openBox, setOpenBox] = useState(null);
@@ -17,10 +17,7 @@ function About() {
         <>
             <Header />
             <main className="about">
-                <div className="about__imageContainer">
-                    <img className="about__imageContainer--image" src={aboutBackground}
-                         alt="Image de fond de la section à propos" />
-                </div>
+                <Banner />
                 <div className="aboutContainer">
                     {aboutJSON.map((aboutBox) => (
                         <div key={aboutBox.id} className="aboutContainer__box">

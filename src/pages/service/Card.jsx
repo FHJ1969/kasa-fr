@@ -1,5 +1,6 @@
+// Card.jsx
 import { useState } from 'react';
-import { useParams } from 'react-router-dom'; // Import useParams hook
+import { useParams, Navigate } from 'react-router-dom';
 import Logements from '/src/data/logements.json';
 import Footer from "../../components/Footer.jsx";
 import Header from "../../components/Header.jsx";
@@ -9,8 +10,8 @@ import { faStar, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-s
 import Chevron from "../../assets/chevron.png";
 
 function Card() {
-    const { id } = useParams(); // Get the ID from the URL
-    const logement = Logements.find(logement => logement.id === id); // Find the logement that matches the ID
+    const { id } = useParams();
+    const logement = Logements.find(logement => logement.id === id);
 
     const [openBox, setOpenBox] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -31,8 +32,13 @@ function Card() {
         );
     };
 
-    const rating = logement.rating;
+    const rating = logement?.rating || 0; // Default to 0 if logement is undefined
     const totalStars = 5;
+
+    // Redirect to error page if logement is undefined
+    if (!logement) {
+        return <Navigate to="/error" />;
+    }
 
     return (
         <>

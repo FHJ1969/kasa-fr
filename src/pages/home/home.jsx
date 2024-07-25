@@ -4,15 +4,14 @@ import Logements from '/src/data/logements.json'
 import '../../components/HeaderFooter.sass'
 import Header from '../../components/Header.jsx'
 import Footer from '../../components/Footer.jsx'
+import Banner from '../../components/Banner.jsx'
 
 function Home() {
     return (
         <>
             <Header />
         <main>
-            <div className="imageContainer">
-                <h2 className="imageContainer__title">Chez vous, partout et ailleurs</h2>
-            </div>
+            <Banner />
 
             <article className="homeContainer">
                 {Logements.map((logement) => (

@@ -9,7 +9,7 @@
   background-image: url("/src/assets/home_background.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   height: 250px;
-  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
   margin: 50px 100px; }
@@ -44,16 +44,18 @@
 .homeContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 120px; }
+  margin: 50px 9%;
+  justify-content: center; }
   @media (max-width: 770px) {
     .homeContainer {
       margin: 50px 30px; } }
   .homeContainer .homeContainer__box {
     display: flex;
     flex-direction: column;
+    background-position: center;
     justify-content: flex-end;
     text-decoration: none;
-    margin: 20px;
+    margin: 1%;
     height: 340px;
     width: 30%;
     position: relative;

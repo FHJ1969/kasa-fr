@@ -32,6 +32,8 @@
           text-transform: uppercase; } }
       .header .header__navbar .header__navbar--link:hover {
         opacity: 0.7; }
+      .header .header__navbar .header__navbar--link.active {
+        border-bottom: 1px solid black; }
 
 .footer {
   background-color: black;
