@@ -1,7 +1,6 @@
 // index.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
 import Home from '../pages/home/home.jsx';
 import About from './about/About.jsx';
 import Error from './error404/error.jsx';

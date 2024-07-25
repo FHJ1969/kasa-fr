@@ -27,10 +27,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); }
   .imageContainer .imageContainer__title {
+    display: inline-block;
     position: relative;
     z-index: 1;
     text-shadow: 2px 2px black;
-    display: block;
     justify-content: center;
     font-size: 48px;
     text-align: center;

@@ -7,7 +7,7 @@ function Header() {
 
     return (
         <header className="header" style={{ marginBottom: '50px' }}>
-            <img src={kasaLogoWhite} alt="Logo de l'entreprise Kasa" className="header__logo" />
+            <Link to="/"><img src={kasaLogoWhite} alt="Logo de l'entreprise Kasa" className="header__logo"/></Link>
             <nav className="header__navbar">
                 <Link
                     to="/"
