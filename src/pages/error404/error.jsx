@@ -4,6 +4,7 @@ import Header from '../../components/Header.jsx'
 import Footer from '../../components/Footer.jsx'
 import {Link} from "react-router-dom";
 
+//Génération dynamique d'une page spécialement conçu dans le cas d'une erreur 404
 function Error () {
     return (
         <>

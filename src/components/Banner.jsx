@@ -2,6 +2,7 @@ import aboutBackground from "../assets/about_background.jpg";
 import homeBackground from "../assets/home_background.jpg";
 import './Banner.sass';
 
+//Génération du composant bannière réutiliser dans la page à propos et accueil
 function Banner () {
     const isHomePage = location.pathname === '/';
     const backgroundImage = isHomePage ? homeBackground : aboutBackground;

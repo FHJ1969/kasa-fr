@@ -6,6 +6,7 @@ import Header from '../../components/Header.jsx'
 import Footer from '../../components/Footer.jsx'
 import Banner from '../../components/Banner.jsx'
 
+// Génération des éléments de la page d'accueil du site
 function Home() {
     return (
         <>

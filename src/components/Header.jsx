@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './HeaderFooter.sass';
 import kasaLogoWhite from "../assets/kasa_logo_white.png";
 
+//Génération du composant Header réutiliser dans toutes les pages
 function Header() {
     const location = useLocation();
 

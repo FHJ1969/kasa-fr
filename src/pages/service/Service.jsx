@@ -1,21 +1,23 @@
-// Card.jsx
+// Service.jsx
 import { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Logements from '/src/data/logements.json';
 import Footer from "../../components/Footer.jsx";
 import Header from "../../components/Header.jsx";
-import './Card.sass';
+import './Service.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import Chevron from "../../assets/chevron.png";
 
-function Card() {
+//Génération du composant Service qui génère la page service qui affiche les détails des offres affichées sur la page d'acceuil
+function Service() {
     const { id } = useParams();
     const logement = Logements.find(logement => logement.id === id);
 
     const [openBox, setOpenBox] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+    //Eléments prenant en charge le statut du carousel image
     const HandleClick = (id) => {
         setOpenBox(openBox === id ? null : id);
     };
@@ -32,14 +34,15 @@ function Card() {
         );
     };
 
-    const rating = logement?.rating || 0; // Default to 0 if logement is undefined
+    const rating = logement?.rating || 0; // Par défaut à 0 si logement est indéfini
     const totalStars = 5;
 
-    // Redirect to error page if logement is undefined
+    // Redirection vers la page error si logement n'est pas défini
     if (!logement) {
         return <Navigate to="/error" />;
     }
 
+    //Génération du DOM
     return (
         <>
             <Header />
@@ -134,4 +137,4 @@ function Card() {
     );
 }
 
-export default Card;
+export default Service;

@@ -6,6 +6,7 @@ import Header from '../../components/Header.jsx';
 import Footer from '../../components/Footer.jsx';
 import Banner from '../../components/Banner.jsx'
 
+//Génération de la page A propos, composé d'une liste déroulante de boîtes'
 function About() {
     const [openBox, setOpenBox] = useState(null);
 

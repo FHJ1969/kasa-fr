@@ -1,6 +1,7 @@
 import './HeaderFooter.sass';
 import kasaLogoBlack from "../assets/kasa_logo_black.png";
 
+//Génération du composant Footer réutiliser dans toutes les pages
 function Footer() {
     return (
         <footer className="footer">
