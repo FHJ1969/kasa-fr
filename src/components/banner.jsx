@@ -1,6 +1,6 @@
 import aboutBackground from "../assets/about_background.jpg";
 import homeBackground from "../assets/home_background.jpg";
-import './Banner.sass';
+import './banner.sass';
 
 //Génération du composant bannière réutiliser dans la page à propos et accueil
 function Banner () {

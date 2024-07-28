@@ -1,10 +1,10 @@
 import './home.sass'
 import { Link } from 'react-router-dom'
 import Logements from '/src/data/logements.json'
-import '../../components/HeaderFooter.sass'
-import Header from '../../components/Header.jsx'
-import Footer from '../../components/Footer.jsx'
-import Banner from '../../components/Banner.jsx'
+import '../../components/headerFooter.sass'
+import Header from '../../components/header.jsx'
+import Footer from '../../components/footer.jsx'
+import Banner from '../../components/banner.jsx'
 
 // Génération des éléments de la page d'accueil du site
 function Home() {

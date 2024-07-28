@@ -1,7 +1,7 @@
 import './error.sass'
-import '/src/components/HeaderFooter.sass'
-import Header from '../../components/Header.jsx'
-import Footer from '../../components/Footer.jsx'
+import '/src/components/headerFooter.sass'
+import Header from '../../components/header.jsx'
+import Footer from '../../components/footer.jsx'
 import {Link} from "react-router-dom";
 
 //Génération dynamique d'une page spécialement conçu dans le cas d'une erreur 404

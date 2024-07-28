@@ -2,9 +2,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from '../pages/home/home.jsx';
-import About from './about/About.jsx';
+import About from './about/about.jsx';
 import Error from './error404/error.jsx';
-import Service from './service/Service.jsx';
+import Service from './service/service.jsx';
 import '../index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

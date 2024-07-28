@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import './About.sass';
+import './about.sass';
 import Chevron from '../../assets/chevron.png';
 import aboutJSON from '../../data/about.json';
-import Header from '../../components/Header.jsx';
-import Footer from '../../components/Footer.jsx';
-import Banner from '../../components/Banner.jsx'
+import Header from '../../components/header.jsx';
+import Footer from '../../components/footer.jsx';
+import Banner from '../../components/banner.jsx'
 
 //Génération de la page A propos, composé d'une liste déroulante de boîtes'
 function About() {

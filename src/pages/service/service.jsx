@@ -1,10 +1,10 @@
-// Service.jsx
+// service.jsx
 import { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Logements from '/src/data/logements.json';
-import Footer from "../../components/Footer.jsx";
-import Header from "../../components/Header.jsx";
-import './Service.sass';
+import Footer from "../../components/footer.jsx";
+import Header from "../../components/header.jsx";
+import './service.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import Chevron from "../../assets/chevron.png";
