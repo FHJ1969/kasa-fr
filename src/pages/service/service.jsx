@@ -1,38 +1,16 @@
 // service.jsx
-import { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Logements from '/src/data/logements.json';
-import Footer from "../../components/footer.jsx";
-import Header from "../../components/header.jsx";
 import './service.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import Chevron from "../../assets/chevron.png";
+import { faStar} from '@fortawesome/free-solid-svg-icons';
+import Gallery from "../../components/gallery/gallery.jsx";
+import CollapseService from "../../components/collapseService/collapseService.jsx";
 
 //Génération du composant Service qui génère la page service qui affiche les détails des offres affichées sur la page d'acceuil
 function Service() {
     const { id } = useParams();
     const logement = Logements.find(logement => logement.id === id);
-
-    const [openBox, setOpenBox] = useState(null);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    //Eléments prenant en charge le statut du carousel image
-    const HandleClick = (id) => {
-        setOpenBox(openBox === id ? null : id);
-    };
-
-    const handlePrevClick = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex === 0 ? logement.pictures.length - 1 : prevIndex - 1
-        );
-    };
-
-    const handleNextClick = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex === logement.pictures.length - 1 ? 0 : prevIndex + 1
-        );
-    };
 
     const rating = logement?.rating || 0; // Par défaut à 0 si logement est indéfini
     const totalStars = 5;
@@ -45,21 +23,8 @@ function Service() {
     //Génération du DOM
     return (
         <>
-            <Header />
             <main className="main">
-                <img className="banner" src={logement.pictures[currentImageIndex]} alt="Image bannière" />
-                <div className="bannerChevron">
-                    <div className="bannerChevron__container">
-                        <button type="button" onClick={handlePrevClick}>
-                            <FontAwesomeIcon icon={faChevronLeft} />
-                        </button>
-                        <button type="button" onClick={handleNextClick}>
-                            <FontAwesomeIcon icon={faChevronRight} />
-                        </button>
-                    </div>
-                    <p className="bannerChevron__list">{currentImageIndex + 1}/{logement.pictures.length}</p>
-                </div>
-
+                <Gallery />
                 <div className="main__content">
                     <article className="titleContainer">
                         <h2 className="titleContainer__title">{logement.title}</h2>
@@ -88,51 +53,8 @@ function Service() {
                         </section>
                     </article>
                 </div>
-                <article className="aboutContainer">
-                    <div className="aboutContainer__box">
-                        <div className="aboutContainer__box--red">
-                            <h3 className="aboutContainer__box--title">Description</h3>
-                            <button
-                                onClick={() => HandleClick('description')}
-                                type="button"
-                                className="aboutContainer__box--button"
-                            >
-                                <img
-                                    className={`aboutContainer__box--icon ${openBox === 'description' ? 'open' : ''}`}
-                                    src={Chevron}
-                                    alt="Icone chevron"
-                                />
-                            </button>
-                        </div>
-                        <p className={`aboutContainer__box--desc ${openBox === 'description' ? 'open' : ''}`}>
-                            {logement.description}
-                        </p>
-                    </div>
-
-                    <div className="aboutContainer__box">
-                        <div className="aboutContainer__box--red">
-                            <h3 className="aboutContainer__box--title">Equipements</h3>
-                            <button
-                                onClick={() => HandleClick('equipments')}
-                                type="button"
-                                className="aboutContainer__box--button"
-                            >
-                                <img
-                                    className={`aboutContainer__box--icon ${openBox === 'equipments' ? 'open' : ''}`}
-                                    src={Chevron}
-                                    alt="Icone chevron"
-                                />
-                            </button>
-                        </div>
-                        <div className={`aboutContainer__box--desc ${openBox === 'equipments' ? 'open' : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
-                            {logement.equipments.map((equipement) => (
-                                <p key={equipement}>{equipement}</p>
-                            ))}
-                        </div>
-                    </div>
-                </article>
+                <CollapseService />
             </main>
-            <Footer />
         </>
     );
 }

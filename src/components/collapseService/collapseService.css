@@ -1,0 +1,78 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0 35px; }
+  @media (max-width: 768px) {
+    .aboutContainer {
+      flex-direction: column; } }
+  .aboutContainer .aboutContainer__box {
+    width: 47%;
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 768px) {
+      .aboutContainer .aboutContainer__box {
+        width: 100%; } }
+    .aboutContainer .aboutContainer__box .aboutContainer__box--red {
+      display: flex;
+      padding: 15px;
+      border-radius: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #FF6060; }
+      @media (max-width: 768px) {
+        .aboutContainer .aboutContainer__box .aboutContainer__box--red {
+          margin: 15px 0;
+          height: 20px; } }
+      .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--title {
+        display: inline-block;
+        font-family: Montserrat, sans-serif;
+        color: white;
+        font-size: 24px; }
+        @media (max-width: 768px) {
+          .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--title {
+            font-size: 18px; } }
+      .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--button {
+        border: none;
+        cursor: pointer;
+        background-color: #FF6060; }
+        @media (max-width: 768px) {
+          .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--button {
+            position: relative;
+            bottom: 8px; } }
+        .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--button .aboutContainer__box--icon {
+          transition: transform 200ms ease-in-out;
+          display: inline-block; }
+          .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--button .aboutContainer__box--icon.open {
+            transform: rotate(-180deg); }
+    .aboutContainer .aboutContainer__box .aboutContainer__box--desc {
+      display: flex;
+      flex-direction: column;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 300ms ease-in-out, visibility 300ms ease-in-out, margin 300ms ease-in-out;
+      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      margin: 0 190px;
+      visibility: hidden; }
+      @media (max-width: 768px) {
+        .aboutContainer .aboutContainer__box .aboutContainer__box--desc {
+          margin: 0 27px; } }
+      .aboutContainer .aboutContainer__box .aboutContainer__box--desc.open {
+        max-height: 200px;
+        margin: 15px;
+        visibility: visible; }
+        @media (max-width: 768px) {
+          .aboutContainer .aboutContainer__box .aboutContainer__box--desc.open {
+            margin: 15px 27px; } }
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; }
+
+/*# sourceMappingURL=collapseService.css.map */
