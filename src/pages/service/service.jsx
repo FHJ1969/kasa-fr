@@ -1,7 +1,6 @@
 // service.jsx
 import { useParams, Navigate } from 'react-router-dom';
 import Logements from '/src/data/logements.json';
-import './service.sass';
 import Gallery from "../../components/gallery/gallery.jsx";
 import CollapseService from "../../components/collapseService/collapseService.jsx";
 import ServiceInfos from "../../components/serviceInfos/serviceInfos.jsx";
