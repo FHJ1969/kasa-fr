@@ -2,21 +2,17 @@
 import { useParams, Navigate } from 'react-router-dom';
 import Logements from '/src/data/logements.json';
 import './service.sass';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar} from '@fortawesome/free-solid-svg-icons';
 import Gallery from "../../components/gallery/gallery.jsx";
 import CollapseService from "../../components/collapseService/collapseService.jsx";
+import ServiceInfos from "../../components/serviceInfos/serviceInfos.jsx";
 
-//Génération du composant Service qui génère la page service qui affiche les détails des offres affichées sur la page d'acceuil
+//Génération de a page service qui affiche les détails des offres proposées sur la page d'acceuil
 function Service() {
     const { id } = useParams();
-    const logement = Logements.find(logement => logement.id === id);
-
-    const rating = logement?.rating || 0; // Par défaut à 0 si logement est indéfini
-    const totalStars = 5;
+    const Logement = Logements.find(Logement => Logement.id === id);
 
     // Redirection vers la page error si logement n'est pas défini
-    if (!logement) {
+    if (!Logement) {
         return <Navigate to="/error" />;
     }
 
@@ -25,34 +21,7 @@ function Service() {
         <>
             <main className="main">
                 <Gallery />
-                <div className="main__content">
-                    <article className="titleContainer">
-                        <h2 className="titleContainer__title">{logement.title}</h2>
-                        <h3 className="titleContainer__location">{logement.location}</h3>
-                        <div className="titleContainer__tags">
-                            {logement.tags.map((tag) => (
-                                <h4 className="titleContainer__tags--item" key={tag}>{tag}</h4>
-                            ))}
-                        </div>
-                    </article>
-                    <article className="rateContainer">
-                        <section className="rateContainer__profile">
-                            <h3 className="rateContainer__profile--name">
-                                {logement.host.name}
-                            </h3>
-                            <img className="rateContainer__profile--picture" src={logement.host.picture} alt={logement.host.name} />
-                        </section>
-                        <section className="rateContainer__rate">
-                            {[...Array(totalStars)].map((_, index) => (
-                                <FontAwesomeIcon
-                                    key={index}
-                                    className={`rateContainer__rate--star ${index < rating ? '' : 'empty'}`}
-                                    icon={faStar}
-                                />
-                            ))}
-                        </section>
-                    </article>
-                </div>
+                <ServiceInfos />
                 <CollapseService />
             </main>
         </>

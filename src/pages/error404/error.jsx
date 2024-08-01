@@ -1,5 +1,4 @@
 import './error.sass'
-import '/src/components/header/header.sass'
 import {Link} from "react-router-dom";
 
 //Génération dynamique d'une page spécialement conçu dans le cas d'une erreur 404
