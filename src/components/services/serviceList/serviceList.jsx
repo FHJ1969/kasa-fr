@@ -1,5 +1,5 @@
 import './serviceList.sass'
-import Logements from "../../data/logements.json";
+import Logements from "../../../data/logements.json";
 import {Link} from "react-router-dom";
 
 function ServiceList() {

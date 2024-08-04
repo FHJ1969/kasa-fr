@@ -1,6 +1,6 @@
 import './collapseAbout.sass';
-import aboutJSON from "../../data/about.json";
-import Chevron from "../../assets/chevron.png";
+import aboutJSON from "../../../data/about.json";
+import Chevron from "../../../assets/chevron.png";
 import {useState} from "react";
 
 function CollapseAbout() {

@@ -2,7 +2,7 @@ import './serviceInfos.sass'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faStar} from "@fortawesome/free-solid-svg-icons";
 import {useParams} from "react-router-dom";
-import Logements from "../../data/logements.json";
+import Logements from "../../../data/logements.json";
 
 function ServiceInfos() {
     const { id } = useParams();

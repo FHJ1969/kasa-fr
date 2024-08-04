@@ -2,8 +2,8 @@
 import { useParams, Navigate } from 'react-router-dom';
 import Logements from '/src/data/logements.json';
 import Gallery from "../../components/gallery/gallery.jsx";
-import CollapseService from "../../components/collapseService/collapseService.jsx";
-import ServiceInfos from "../../components/serviceInfos/serviceInfos.jsx";
+import CollapseService from "../../components/collapse/collapseService/collapseService.jsx";
+import ServiceInfos from "../../components/services/serviceInfos/serviceInfos.jsx";
 
 //Génération de a page service qui affiche les détails des offres proposées sur la page d'acceuil
 function Service() {

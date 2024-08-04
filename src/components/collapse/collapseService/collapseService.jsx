@@ -1,6 +1,6 @@
-import Chevron from "../../assets/chevron.png";
+import Chevron from "../../../assets/chevron.png";
 import {useParams} from "react-router-dom";
-import Logements from "../../data/logements.json";
+import Logements from "../../../data/logements.json";
 import {useState} from "react";
 import './collapseService.sass';
 
