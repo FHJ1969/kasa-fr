@@ -6,11 +6,11 @@ function Error () {
     return (
         <>
         <main>
-            <article className="error">
+            <div className="error">
                 <h2 className="error__title">404</h2>
                 <h3 className="error__desc">Oups! La page que vous demandez n'existe pas.</h3>
                 <Link to="/" className="error__return">Retourner sur la page d’accueil</Link>
-            </article>
+            </div>
         </main>
         </>
     )
