@@ -1,0 +1,28 @@
+.about {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-family: "Lato", sans-serif; }
+  .about .about__about {
+    width: 20%;
+    margin-right: 20px; }
+    .about .about__about .about__about--title {
+      font-family: "League Spartan", sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0; }
+  .about .about__locations {
+    width: 20%;
+    margin-left: 20px; }
+    .about .about__locations .about__locations--title {
+      font-family: "League Spartan", sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0; }
+    .about .about__locations .about__locations--list {
+      margin: 10px 0 0 22px; }
+
+/*# sourceMappingURL=about.css.map */

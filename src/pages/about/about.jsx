@@ -1,13 +1,11 @@
-import Banner from '../../components/banner/banner.jsx'
-import CollapseAbout from "../../components/collapse/collapseAbout/collapseAbout.jsx";
+import Carousel from '/src/components/carousel/carousel.jsx';
 
 //Génération de la page A propos, composé d'une liste déroulante de boîtes'
 function About() {
     return (
         <>
             <main className="about">
-                <Banner />
-                <CollapseAbout />
+                <Carousel />
             </main>
         </>
     );

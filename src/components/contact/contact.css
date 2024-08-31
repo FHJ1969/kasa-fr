@@ -1,0 +1,24 @@
+.contact {
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #5271ff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0; }
+  .contact__title {
+    font-size: 41px; }
+  .contact__description {
+    font-size: 22px; }
+  .contact__icons {
+    margin-top: 25px; }
+    .contact__icons--icon {
+      font-size: 60px;
+      margin: 15px;
+      color: white;
+      transition: transform 200ms ease-in-out; }
+      .contact__icons--icon:before {
+        transform: scale(1.1); }
+
+/*# sourceMappingURL=contact.css.map */
