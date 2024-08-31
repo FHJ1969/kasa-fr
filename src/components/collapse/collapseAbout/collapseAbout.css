@@ -1,0 +1,59 @@
+.about {
+  width: 100%; }
+  .about .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px; }
+    .about .aboutContainer .aboutContainer__box {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .about .aboutContainer .aboutContainer__box .aboutContainer__box--red {
+        display: flex;
+        padding: 15px;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #FF6060;
+        margin: 15px 170px; }
+        @media (max-width: 768px) {
+          .about .aboutContainer .aboutContainer__box .aboutContainer__box--red {
+            margin: 15px 20px; } }
+        .about .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--title {
+          display: inline-block;
+          font-family: Montserrat, sans-serif;
+          color: white;
+          font-size: 24px; }
+          @media (max-width: 768px) {
+            .about .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--title {
+              font-size: 18px; } }
+        .about .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--button {
+          border: none;
+          cursor: pointer;
+          background-color: #FF6060; }
+          .about .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--button .aboutContainer__box--icon {
+            transition: transform 200ms ease-in-out;
+            display: inline-block; }
+            .about .aboutContainer .aboutContainer__box .aboutContainer__box--red .aboutContainer__box--button .aboutContainer__box--icon.open {
+              transform: rotate(-180deg); }
+      .about .aboutContainer .aboutContainer__box .aboutContainer__box--desc {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 300ms ease-in-out, visibility 300ms ease-in-out, margin 300ms ease-in-out;
+        font-size: 24px;
+        font-family: Montserrat, sans-serif;
+        margin: 0 190px;
+        visibility: hidden; }
+        @media (max-width: 768px) {
+          .about .aboutContainer .aboutContainer__box .aboutContainer__box--desc {
+            font-size: 16px;
+            margin: 0 27px; } }
+        .about .aboutContainer .aboutContainer__box .aboutContainer__box--desc.open {
+          max-height: 200px;
+          margin: 15px 190px;
+          visibility: visible; }
+          @media (max-width: 768px) {
+            .about .aboutContainer .aboutContainer__box .aboutContainer__box--desc.open {
+              margin: 15px 27px; } }
+
+/*# sourceMappingURL=collapseAbout.css.map */

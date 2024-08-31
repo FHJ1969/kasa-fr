@@ -1,0 +1,35 @@
+.singleImage {
+  margin-bottom: 100px; }
+
+.bannerChevron {
+  display: flex;
+  flex-direction: column; }
+  .bannerChevron .bannerChevron__container {
+    color: white;
+    position: relative;
+    bottom: 350px;
+    font-size: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px; }
+    @media (max-width: 768px) {
+      .bannerChevron .bannerChevron__container {
+        bottom: 200px;
+        font-size: 40px; } }
+  .bannerChevron .bannerChevron__list {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: 130px; }
+    @media (max-width: 768px) {
+      .bannerChevron .bannerChevron__list {
+        bottom: 80px;
+        display: none; } }
+
+.hidden-button {
+  opacity: 0;
+  cursor: default; }
+
+/*# sourceMappingURL=gallery.css.map */
